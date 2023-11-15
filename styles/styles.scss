@@ -1,0 +1,33 @@
+@import "./defaults/css-reset";
+@import "./defaults/colors";
+
+body{
+    font-family: "Roboto", sans-serif;
+    header{
+        background-color: $primary-color;
+        color: #fff;
+        nav{
+            display: flex;
+            justify-content: space-between;
+            #header-logo{
+                font-size: 1.3em;
+                font-weight: 600;
+                text-decoration: none;
+                color: #fff;
+            }
+            #navbar-links{
+                display: flex;
+                justify-content: space-between;
+                width: 25%;
+                .nav-link{
+                    text-decoration: none;
+                    color: #ededed;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+    section{
+        height: 30vh;
+    }
+}
