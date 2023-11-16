@@ -7,7 +7,7 @@ body{
 }
 
 section{
-    height: 30vh;
+    height: 320px;
 }
 
 .page-spacing{
@@ -83,7 +83,6 @@ header{
 }
 
 #randominfo-section{
-    padding-bottom: 60px;
     h2{
         text-align: center;
         font-size: 1.7em;
@@ -94,7 +93,7 @@ header{
         padding: 0px 20%;
         display: flex;
         justify-content: center;
-        gap: 25px;
+        gap: 30px;
         .box-item{
             display: flex;
             flex-direction: column;
@@ -119,13 +118,68 @@ header{
 }
 
 #quote-section{
+    padding: 70px 0px;
+    padding-bottom: 10px;
+    height: 200px;
     background-color: #e5e7eb;
     #quote-block{
-        padding: 100px 400px;
         display: flex;
         flex-direction: column;
-        p{
-            width: 100%;
+        margin: 0px 25%;
+        #main-quote{
+            font-size: 1.5em;
+            font-weight: 300;
+            margin-bottom: 20px;
+            font-style: italic;
+            line-height: 1.3em;
+            height: 50%;
         }
+        #quote-author{
+            font-size: 1.1em;
+            font-weight: 500;
+            align-self: flex-end;
+        }
+    }
+}
+
+#cta-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #cta-block{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: $btn-color;
+        width: 100%;
+        height: 40%;
+        border-radius: 12px;
+        #cta-main-content{
+            color: #fff;
+            h3{
+                font-weight: 500;
+                font-size: 1.2em;
+                padding-bottom: 5px;
+            }
+            #cta-subtext{
+                font-weight: 200;
+                font-size: .8em;
+            }
+        }
+        #cta-btn{
+            border: 1px white solid;
+        }
+    }
+}
+
+footer{
+    height: 60px;
+    background-color: $primary-color;
+    color: #fff;
+    text-align: center;
+    p{
+        padding: 30px 0px;
+        font-size: .8em;
+        font-weight: 300;
     }
 }
