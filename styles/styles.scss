@@ -2,78 +2,130 @@
 @import "./defaults/colors";
 
 body{
-    .page-spacing{
-        padding: 0px 15%;
-    }
     font-family: "Roboto", sans-serif;
-    .page-btn{
-        text-decoration: none;
-        font-size: .8em;
-        font-weight: 500;
-        color: #fff;
-        background-color: $btn-color;
-        border-radius: 5px;
-        padding: 5px 22px;
-    }
-    header{
 
-        background-color: $primary-color;
-        color: #fff;
-        nav{
-            padding-top: 15px;
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 100px;
-            #header-logo{
-                font-size: 1.2em;
-                font-weight: 600;
-                text-decoration: none;
-                color: #fff;
-            }
-            #navbar-links{
-                display: flex;
-                justify-content: space-between;
-                width: 35%;
-                .nav-link{
-                    text-decoration: none;
-                    color: #ededed;
-                    font-weight: 300;
-                    font-size: .8em;
-                }
-            }
+}
+
+section{
+    height: 30vh;
+}
+
+.page-spacing{
+    padding: 0px 15%;
+}
+.page-btn{
+    text-decoration: none;
+    font-size: .8em;
+    font-weight: 500;
+    color: #fff;
+    background-color: $btn-color;
+    border-radius: 5px;
+    padding: 5px 22px;
+}
+
+header{
+    background-color: $primary-color;
+    color: #fff;
+    nav{
+        padding-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+        #header-logo{
+            font-size: 1.2em;
+            font-weight: 600;
+            text-decoration: none;
+            color: #fff;
         }
-        #header-content{
+        #navbar-links{
             display: flex;
             justify-content: space-between;
-            height: 50%;
-            padding-bottom: 100px;
-            #page-heading{
-                width: 50%;
-                h1{
-                    font-size: 2em;
-                    font-weight: 700;
-                    width: 60%;
-                    line-height: 1.1em;
-                }
-                p{
-                    font-size: .85em;
-                    font-weight: 200;
-                    width: 80%;
-                    margin-bottom: 10px;
-                }
-            }
-            #header-img{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: #6d747d;
+            width: 30%;
+            .nav-link{
+                text-decoration: none;
+                color: #ededed;
+                font-weight: 300;
                 font-size: .8em;
-                width: 40%;
-                height: 140px;
             }
         }
     }
-    section{
-        height: 30vh;
+    #header-content{
+        display: flex;
+        justify-content: space-between;
+        height: 50%;
+        padding-bottom: 100px;
+        #page-heading{
+            width: 50%;
+            h1{
+                font-size: 2em;
+                font-weight: 700;
+                width: 60%;
+                line-height: 1.1em;
+            }
+            p{
+                color: rgba(255, 255, 255, 0.786);
+                font-size: .85em;
+                font-weight: 300;
+                width: 80%;
+                margin-bottom: 15px;
+            }
+        }
+        #header-img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #6d747d;
+            font-size: .8em;
+            width: 35%;
+            height: 150px;
+        }
+    }
+}
+
+#randominfo-section{
+    padding-bottom: 60px;
+    h2{
+        text-align: center;
+        font-size: 1.7em;
+        font-weight: 700;
+        margin: 40px 0px;
+    }
+    #box-wrapper{
+        padding: 0px 20%;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        .box-item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            p{
+                margin-top: 5px;
+                color: rgb(87, 87, 87);
+                text-align: center;
+                font-size: .8em;
+                font-weight: 300;
+                width: 95%;
+            }
+            .small-box{
+                width: 120px;
+                height: 120px;
+                border: 3px $btn-color solid;
+                border-radius: 12px;
+            }
+        }
+    }
+}
+
+#quote-section{
+    background-color: #e5e7eb;
+    #quote-block{
+        padding: 100px 400px;
+        display: flex;
+        flex-direction: column;
+        p{
+            width: 100%;
+        }
     }
 }
